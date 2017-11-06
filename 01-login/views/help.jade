@@ -1,0 +1,56 @@
+extends layout
+
+block content
+
+    .wrapper
+      #welcomeSign
+        h1
+          center  Help Portal 
+                   
+      .list-group.main-section1.marginSep1.addBorder
+       
+        h2.text-center Contact Us
+                         
+        br
+                           
+        .row
+          form#contact-form.contact-form(role='form', method='post', action='/submission')
+            .row
+              .col-md-6
+                .form-group
+                  input#Name.form-control(type='text', name='Name', autocomplete='off', placeholder='Name')
+                                       
+              .col-md-6
+                .form-group
+                  input#email.form-control(type='email', name='Email', autocomplete='off', placeholder='E-mail')
+                                   
+            .row
+              .col-md-12
+                .form-group
+                  textarea#Message.form-control.textarea(rows='3', name='Message', placeholder='Message')
+                                   
+            .row
+              .col-md-12
+                button.btn.main-btn.pull-right(href='/submission', type='submit') Send a message
+      
+       
+      .list-group.main-section2.marginSep2.addBorder
+        
+        .card(style='width: 32rem;')
+          .card-block
+            h2.card-title.text-center Have you tried documentation?
+                      
+        br
+        
+        .card(style='width: 32rem;')
+          .card-block
+            h4.card-title.text-center FAQs
+                               
+            p.card-text You may find your answer in the frequently asked questions page.
+                               
+            br
+                               
+            center
+              a.btn.btn-primary(href='/faqs') FAQs
+      
+

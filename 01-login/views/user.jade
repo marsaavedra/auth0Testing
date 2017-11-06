@@ -1,0 +1,57 @@
+
+extends layout
+
+block content
+
+       
+    .wrapper
+      #welcomeSign
+        h1#dash
+          center Welcome #{user.nickname}
+                 
+      .wrapper.center
+        div
+          center
+            .iconContainer
+              span.icon
+                a(href='/sdk')
+                  img(src='/images/sdk.jpg')
+                               
+              span.myText SDK
+                           
+            .iconContainer
+              span.icon
+                a(href='/firmware')
+                  img(src='/images/firmware.jpg')
+                               
+              span.myText Latest Firmware
+                           
+            .iconContainer
+              span.icon
+                a(href='/sampledata')
+                  img(src='/images/sampledata.jpg')
+                               
+              span.myText Sample Data
+                     
+        div
+          center
+            .iconContainer
+              span.icon
+                a(href='/pig')
+                  img(src='/images/book.jpg')
+                               
+              span.myText Product Info Guide
+                           
+            .iconContainer
+              span.icon
+                a(href='/faqs')
+                  img(src='/images/faq.png')
+                               
+              span.myText Faqs
+                           
+            .iconContainer
+              span.icon
+                a(href='/help')
+                  img(src='/images/help.jpg')
+                               
+              span.myText Help Portal

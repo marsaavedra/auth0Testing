@@ -1,0 +1,47 @@
+doctype html(lang='en')
+head
+    title Luminar
+         
+    meta(charset='utf-8')
+         
+    meta(name='viewport', content='width=device-width, initial-scale=1')  
+         
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+
+    script(src="https://cdn.auth0.com/js/auth0/8.7/auth0.min.js")  
+        
+    link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+       
+  body
+    header
+      nav.navbar.navbar-default.navbar-inverse
+        .container-fluid
+          .navbar-header
+            li
+              a(href='/user')
+                img#logoImg(src='/images/bars.png')
+                        
+                          
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/') Log Out
+                           
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/sdk') SDK
+                              
+            li
+              a(href='/firmware') Firmware
+                               
+            li
+              a(href='/pig') Product Info Guide
+                               
+            li
+              a(href='/help') Help Portal
+                               
+            li
+              a(href='/sampledata') Sample Data
+                               
+            li
+              a(href='/faqs') FAQs
+   block content
